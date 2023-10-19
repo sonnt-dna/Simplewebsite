@@ -1,21 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Embed Website</title>
-    <script type="text/javascript">
-        window.onload = function() {
-            var iframe = document.getElementById('embed-site');
-            iframe.onload = function() {
-                var doc = iframe.contentWindow.document;
-                var form = doc.querySelector('#loginForm');
-                if (form) {
-                    doc.querySelector('#Em').value = 'dna@oilgas.ai';
-                    doc.querySelector('#password').value = 'Vpi2205@';
-                    form.submit();
-                }
-            };
-        };
-    </script>
 </head>
 <body>
     <iframe id="embed-site" src="https://chat.openai.com/share/b85c44db-aea4-4f9f-aa03-26b89f2d3023" width="1200" height="600"></iframe>
